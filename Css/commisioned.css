@@ -1,0 +1,1272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.089) 0px 1px;
+    padding: 10px 30px;
+}
+
+.Be {
+    display: none;
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.behance {
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 15.6px;
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 20.8px;
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+}
+
+.bi-chevron-down {
+    color: rgb(154, 154, 154);
+    stroke-width: 20px;
+    line-height: 10px;
+    font-size: 0.9rem;
+    filter: drop-shadow(0 0 0.5px black);
+}
+
+.Explore {
+    border-bottom: 3px solid black;
+    padding-bottom: 17px;
+}
+
+.Jobs:hover {
+    border-bottom: 3px solid black;
+    padding-bottom: 17px;
+}
+
+
+.Resources {
+    padding-right: 20px;
+    border-right: 2px solid rgba(0, 0, 0, 0.176);
+}
+
+.drop-down {
+    position: relative;
+}
+
+.drop-down::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 12px;
+}
+
+.drop-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.drop1 {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 2;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.426);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.drop-down.margin .drop1 {
+    margin-top: 9px;
+}
+
+.drop-down .drop2 {
+    margin-top: 9px;
+}
+
+.margin {
+    margin: 0;
+}
+
+.nav-links .drop-down:hover .drop1 {
+    display: block;
+}
+
+.drop1 h3:hover {
+    color: rgb(23, 79, 192);
+}
+
+.bi-chevron-down {
+    color: rgb(154, 154, 154);
+    stroke-width: 20px;
+    line-height: 10px;
+    font-size: 0.9rem;
+    filter: drop-shadow(0 0 0.5px black);
+}
+
+.drop2 {
+    display: none;
+    background-color: white;
+    position: absolute;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 2;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.426);
+    cursor: pointer;
+}
+
+.drop1::before,
+.drop2::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+}
+
+
+.menu1 {
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+
+.menu1 h3 {
+    display: flex;
+    gap: 10px;
+}
+
+.menu1 h3:hover {
+    color: rgb(3, 81, 232)
+}
+
+.menu2 {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    padding: 20px;
+
+}
+
+.menu2 h3 {
+    color: gray;
+}
+
+.menu2 h3:hover {
+    color: rgb(3, 81, 232)
+}
+
+.nav-links .drop-down:hover .drop2 {
+    display: block;
+}
+
+.bttn1 {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 18px;
+    color: white;
+    background: linear-gradient(to right, #0185fd, #001fac);
+    height: 32px;
+    width: 135px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.search {
+    display: none;
+}
+
+.bttn2 {
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 14px;
+    color: rgb(0, 87, 255);
+    height: 32px;
+    width: 80px;
+    border-radius: 15px;
+    border: 1px solid rgb(223, 230, 246);
+    background-color: rgb(245, 248, 255);
+}
+
+.bttn2:hover {
+    cursor: pointer;
+    background: rgb(224, 234, 255);
+}
+
+.start {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.vbg img {
+    display: flex;
+    width: 60px;
+}
+
+.adobe {
+    position: relative;
+}
+
+.adobe::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: -18px;
+    width: 420px;
+    height: 14px;
+}
+
+.menu-box::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 90px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: solid white;
+    z-index: -1;
+}
+
+.menu-box {
+    display: none;
+    width: 420px;
+    background: #fff;
+    border-radius: 12px;
+    right: -25px;
+    top: 30px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+.menu-item {
+    border: 1px solid rgba(0, 85, 255, 0.567);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: rgb(245, 248, 255);
+    margin-bottom: 10px;
+}
+
+.menu-item:hover {
+    background: rgb(222, 232, 255);
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    gap: 20px;
+}
+
+.left .A {
+    height: 17px;
+}
+
+.left img {
+    margin: auto;
+    padding-right: 20px;
+    border-right: 1px solid rgba(0, 85, 255, 0.567);
+    width: 40px;
+    height: 20px;
+}
+
+.icon {
+    font-size: 22px;
+}
+
+.text h4 {
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(0, 87, 255);
+    font-size: 0.9rem;
+}
+
+.text p {
+    margin: 2px 0 0;
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(0, 87, 255);
+    font-size: 0.7rem;
+}
+
+.arrow {
+    font-size: 18px;
+    color: #2563eb;
+}
+
+.adobe:hover .menu-box {
+    display: block;
+    opacity: 1;
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.077);
+}
+
+.content button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.spread {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.Projects {
+    color: white;
+    background-color: black;
+}
+
+.spread:hover {
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 160px;
+}
+
+.hero h4 {
+    font-family: adobe-clean, "Adobe Clean", メイリオ, Meiryo, "”ヒラギノ角ゴ Pro W3″", "”Hiragino Kaku Gothic Pro W3″", osaka, "”ＭＳ Ｐゴシック”", "MS PGothic", sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 20.8px;
+    color: rgb(235, 16, 0);
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 50px;
+    color: rgb(25, 25, 25);
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.hero h3 {
+    font-family: adobe-clean, "Adobe Clean", メイリオ, Meiryo, "”ヒラギノ角ゴ Pro W3″", "”Hiragino Kaku Gothic Pro W3″", osaka, "”ＭＳ Ｐゴシック”", "MS PGothic", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgb(112, 112, 112);
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.present {
+    list-style: none;
+    padding: 10px;
+}
+
+.present li {
+    font-family: adobe-clean, "Adobe Clean", メイリオ, Meiryo, "”ヒラギノ角ゴ Pro W3″", "”Hiragino Kaku Gothic Pro W3″", osaka, "”ＭＳ Ｐゴシック”", "MS PGothic", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    gap: 20px;
+    counter-increment: num;
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.present li::marker {
+    padding: 20px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.present li::before {
+    content: counter(num);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    align-items: center;
+    color: red;
+    font-weight: 600;
+
+    background-color: rgb(254, 245, 245);
+}
+
+.hero img {
+    width: 550px;
+}
+
+.left-image p {
+    text-align: center;
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.left-image span {
+    text-decoration: underline;
+}
+
+.all {
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: -90px;
+}
+
+.new {
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 50px 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.card-1 {
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 60px;
+    background-color: rgb(245, 248, 255);
+    border-radius: 10px;
+    /* width: 400px; */
+}
+
+.card-1 h4 {
+    margin-top: 50px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    color: rgb(25, 25, 25);
+}
+
+.card-1 p {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(25, 25, 25);
+    margin-top: 20px;
+}
+
+.card-1 i {
+    font-size: 1.5rem;
+    background-color: rgb(224, 234, 255);
+    border: none;
+    color: rgb(20, 100, 255);
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+}
+
+.card-1 button {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 30px;
+    width: 100px;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid gray;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.card {
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card .tag {
+    background: white;
+    border: 1px solid rgba(128, 128, 128, 0.499);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.time {
+    font-size: 12px;
+    color: orange;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.card h3 {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.price {
+    color: #0066ff;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.duration {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.duration i {
+    color: #0066ff;
+}
+
+.desc {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.4;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.bottom span {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.apprentice {
+    font-size: 13px;
+    color: #333;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.apprentice img {
+    width: 20px;
+}
+
+.card button {
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid rgba(128, 128, 128, 0.513);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    border: none;
+    background: #ddd;
+}
+
+.Past {
+    font-family: adobe-clean, "Adobe Clean", メイリオ, Meiryo, "”ヒラギノ角ゴ Pro W3″", "”Hiragino Kaku Gothic Pro W3″", osaka, "”ＭＳ Ｐゴシック”", "MS PGothic", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 36px;
+    color: rgb(25, 25, 25);
+    padding: 30px;
+}
+
+.card-con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 30px;
+}
+
+.job-card {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card:hover {
+    transform: translateY(-4px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.category {
+    font-size: 0.7rem;
+    background: white;
+    padding: 4px;
+    color: #333;
+    border: 1px solid rgba(128, 128, 128, 0.18);
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    margin-bottom: 10PX;
+}
+
+.filled {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 15.6px;
+    color: rgb(2, 137, 1);
+}
+
+.job-title {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 20.8px;
+    color: rgb(25, 25, 25);
+    margin-bottom: 10px;
+}
+
+.payment {
+    color: #0066ff;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+.timeline {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(25, 25, 25);
+    margin-bottom: 16px;
+}
+
+.tags {
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tag {
+    display: flex;
+    gap: 10px;
+}
+
+.tag img {
+    width: 20px;
+}
+
+.view-job {
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid rgba(128, 128, 128, 0.513);
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.view-job:hover {
+    background: rgba(232, 232, 232, 0.607);
+}
+
+Line {
+    width: 100%;
+    padding-top: 150px;
+    line-height: 2;
+}
+
+.Line img {
+    width: 100%;
+}
+
+.Upgrade {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Line .bold {
+    font-weight: 600;
+}
+
+.Line .light {
+    font-weight: 200;
+}
+
+.Line .blue {
+    color: rgb(0, 87, 255);
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: rgb(25, 25, 25);
+    padding: 60px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.column {
+    font-size: 1.2rem;
+}
+
+.col h3 {
+    margin-bottom: 30px;
+}
+
+.col {
+    line-height: 2.5;
+}
+
+.col p:hover {
+    text-decoration: underline;
+}
+
+.social p {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-down {
+    border-top: 1px solid rgb(132, 131, 131);
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.row-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-down h4 {
+    font-size: 0.8rem;
+    font-weight: 100;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-down img {
+    width: 100px;
+    display: block;
+}
+
+.row {
+    display: flex;
+    text-align: left;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-drop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-drop  i {
+    font-size: 14px;
+    color: rgb(189, 189, 189);
+}
+
+.TOU {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-select-wrap {
+    position: relative;
+}
+
+.footer-select-wrap select {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: rgb(189, 189, 189);
+    padding-right: 18px;
+    cursor: pointer;
+}
+
+.footer-select-wrap select:hover {
+    text-decoration: underline;
+}
+
+.footer-select-wrap select:focus {
+    outline: none;
+}
+
+.footer-select-wrap option {
+    color: rgb(25, 25, 25);
+}
+
+.footer-select-wrap i {
+    position: absolute;
+    right: 0;
+    width: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8px;
+    color: rgb(189, 189, 189);
+    pointer-events: none;
+}
+
+.footer-down h4:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:1400px) {
+
+    .stick {
+        position: sticky;
+        z-index: 999;
+        top: 49px;
+    }
+
+    .caret {
+        display: none;
+    }
+
+    .hero {
+        padding: 120px 30px;
+    }
+
+    .hero h1 {
+        width: 70%;
+    }
+
+    .card-container {
+        margin-top: -50px;
+    }
+
+    .Past {
+        display: none;
+    }
+
+    .card-con {
+        display: none;
+    }
+
+    .Upgrade {
+        text-align: center;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 50px;
+    }
+}
+
+@media(max-width:1200px) {
+    .footer-down {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+@media(max-width:1100px) {
+    .get {
+        text-align: center;
+    }
+
+    .hero h1 {
+        width: 100%;
+    }
+
+    .hero h3 {
+        width: 100%;
+    }
+
+    .apply {
+        align-items: center;
+    }
+
+    .left-image {
+        display: none;
+    }
+
+}
+
+@media(max-width:1090px) {
+    .behance {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .bttn2 {
+        display: none;
+    }
+
+    .vbg img {
+        display: none;
+    }
+
+    .Be {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 1;
+    }
+
+    .search {
+        display: block;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:1079px) {
+    .bttn1 {
+        display: none;
+    }
+
+    .stick {
+        position: sticky;
+        top: 40px;
+        z-index: 999;
+    }
+}
+
+@media(max-width:1000px) {
+    .footer-down img {
+        width: 50px;
+    }
+
+    .foot {
+        gap: 30px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+}
+
+@media(max-width:962px) {
+    .column {
+        display: none;
+    }
+
+    .foot {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width:900px) {
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .row-1 {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width:795px) {
+    .foot {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .TOU h4 {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media(max-width:700px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
+
+
+@media(max-width:650px) {
+    .kick {
+        margin-top: -50px;
+    }
+
+    .content {
+        display: none;
+    }
+}
+
+
+@media(max-width:600px) {
+    .all {
+        display: none;
+    }
+
+    .new {
+        margin-top: -150px;
+    }
+
+
+    .column {
+        display: block;
+    }
+
+    .foot {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .TOU {
+        justify-content: center;
+    }
+
+    .TOU .do {
+        display: none;
+    }
+
+}
+
+@media(max-width:504px) {
+    .present li {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:450px) {
+    .footer-drop {
+        margin-left: 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        width: 100%;
+    }
+
+    .TOU {
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:400px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .new h1 {
+        font-size: 1.3rem;
+    }
+
+
+    .card-container {
+        padding: 20px;
+    }
+
+    .Upgrade {
+        text-align: center;
+    }
+}
+
+@media(max-width:371px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media(max-width:350px) {
+    .card {
+        margin: auto;
+        width: 100%;
+    }
+
+    .kick {
+        padding: 0;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 120px 14px 0;
+    }
+
+    .new {
+        padding-top: 150px;
+    }
+
+    .new h1 {
+        font-size: 1.1rem;
+    }
+
+    .present li {
+        font-size: 1.3rem;
+    }
+
+    .Upgrade {
+        display: block;
+    }
+
+    .card-container {
+        padding: 12px;
+    }
+
+    .footer-down {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .TOU .cook {
+        display: none;
+    }
+
+    .row-1 h4 {}
+
+    .footer-drop {
+        justify-content: center;
+    }
+
+}

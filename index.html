@@ -1,13 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="./Css/behance.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/svg+xml" href="./Multimedia/images/title icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Behance</title>
 </head>
+
 <body>
-    <div>
-        <h1>Welcome to behance</h1>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <span class="Be"><i class="bi bi-list"></i>
+                <h3>Bē</h3>
+            </span>
+            <h2><a class="behance" href="https://www.behance.net/">Bēhance</a></h2>
+
+            <nav class="nav-links">
+                <div class="nav-menu">
+                    <div><a class="Explore" href="">Explore</a></div>
+                    <div><a class="Jobs" href="">Jobs</a></div>
+
+                    <!-- Drop-1 -->
+                    <div class="drop-down margin">
+                        <div class="drop-wrap">
+                            <a class="Resources" href="#">Resources <i class="bi-chevron-down"></i></a>
+                            <div class="drop1">
+                                <h3>Overview</h3>
+                                <h3>Career guides</h3>
+                                <a href="./html/commisioned.html"><h3>Commisioned Projects</h3></a>
+                                <h3>Creative Apprentice</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drop-2 -->
+                    <div class="drop-down">
+                        <div class="drop-wrap">
+                            <a class="Hire" href="">Hire <i class="bi-chevron-down"></i></a>
+                            <div class="drop2">
+                                <div class="menu1">
+                                    <h3><i class="bi bi-clipboard2-minus"></i> My Jobs</h3>
+                                    <h3><i class="bi bi-search"></i> Freelancers</h3>
+                                    <h3><i class="bi bi-info-circle"></i> Hiring on Behance</h3>
+                                    <h3><i class="bi bi-plus-circle"></i> Create New Job</h3>
+                                </div>
+                                <div class="menu2">
+                                    <h3>Logo Designer</h3>
+                                    <h3>Brand Designer</h3>
+                                    <h3>Website Designer</h3>
+                                    <h3>Illustrators</h3>
+                                    <h3>Social Media Designer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- Head-right -->
+        <div class="start">
+            <button class="bttn1"><a href="./html/signin-page.html">Start Free Trial</a></button>
+            <button class="bttn2">Sign In</button>
+
+            <div class="adobe drop-down">
+                <div class="drop-wrap vbg">
+                    <img src="./Multimedia/images/adobe.svg" alt="">
+                </div>
+
+                <!-- Drop-3 -->
+                <div class="menu-box">
+                    <div class="menu-item">
+                        <div class="left">
+                            <img class="A" src="./Multimedia/images/ADOBE RED IMG.png" alt="">
+                            <div class="text">
+                                <h4>Go to adobe.com</h4>
+                                <p>Access your apps, services, files, and more</p>
+                            </div>
+                        </div>
+                        <i class="bi bi-arrow-right arrow"></i>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="left">
+                            <img src="Multimedia/Images/adobe multi-colored.jpg" alt="">
+                            <!-- <i class="bi bi-stars icon"></i> -->
+                            <div class="text">
+                                <h4>Get Adobe Express free</h4>
+                                <p>Quickly make content from thousands of free templates</p>
+                            </div>
+                        </div>
+                        <i class="bi bi-arrow-right arrow"></i>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="left">
+                            <!-- <i class="bi bi-stack icon"></i> -->
+                            <img src="./Multimedia/Images/st adobe behance.png" alt="">
+                            <div class="text">
+                                <h4>30-day free trial of Adobe Stock</h4>
+                                <p>835M+ assets, plus edit with ease using generative AI</p>
+                            </div>
+                        </div>
+                        <i class="bi bi-arrow-right arrow"></i>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="left">
+                            <!-- <i class="bi bi-behance icon "></i> -->
+                            <img src="./Multimedia/Images/BE download.svg" alt="">
+                            <div class="text">
+                                <h4>7 day free trial of Behance Pro</h4>
+                                <p>Supercharge your creative career with Behance Pro</p>
+                            </div>
+                        </div>
+                        <i class="bi bi-arrow-right arrow"></i>
+                    </div>
+
+                </div>
+            </div>
+
+    </header>
+
+    <!--HERO SECTION  -->
+
+    <div class="hero">
+        <h2>The World’s <span>Best Creators</span>Are On Behance</h2>
+        <p>A comprehensive platform to help hirers and creators navigate the creative world from discovering
+            inspiration, to connecting with one another</p>
+        <div class="hero-buttons">
+            <button class="bttn3">Hire a Freelancer</button>
+            <button class="bttn4">Try Behance Pro</button>
+        </div>
     </div>
+
+
+    <!-- Search-bar -->
+    <div class="stick">
+        <div class="filter-bar">
+
+            <i class="bi bi-sliders slide"></i>
+            <button class="bttn-bar"><i class="bi bi-sliders"></i>Filter</button>
+
+            <div class="filter-left">
+                <div class="input-box">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Behance...">
+                </div>
+                <div class="filter-right">
+                    <a class="p-jects" href="">Projects <i class="bi-chevron-down"></i></a>
+                    <a class="projects" href="#">Projects</a>
+                    <a class="bar-hover" href="#">People</a>
+                    <a class="bar-hover" href="#">Assets</a>
+                    <a class="bar-hover" href="#">Images</a>
+                    <a class="people" href="">People</a>
+                    <a class="more" href="">More <i class="bi-chevron-down"></i></a>
+                    <i class="cloud bi bi-cloud-upload"></i>
+                    <i class="bi-chevron-down chevron"></i>
+                </div>
+            </div>
+
+
+            <div class="h">
+                <div><i class="filter bi bi-filter"></i></div>
+                <div class="Recommended">Recommended</div>
+                <div class="custom-drops">
+                    <i class="caret bi bi-caret-down-fill"></i>
+
+                    <div class="Recommended-drop">
+                        <a href="">Recommended</a>
+                        <a href="">Curated</a>
+                        <a href="">Most Appreciated</a>
+                        <a href="">Most Viewed</a>
+                        <a href="">Most Discussed</a>
+                        <a href="">Most Recent</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image-slider -->
+        <div class="gallery">
+            <div class="album-one">
+                <h4><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDov...U9ImV2ZW5vZGQiPjwvcGF0aD48IS0tXS0tPjwvZz48L3N2Zz4=" alt="">For you</h4>
+            </div>
+
+            <div class="album-two">
+                <h4>Following</h4>
+            </div>
+
+            <div class="album-two">
+                <h4>Graphic Design</h4>
+            </div>
+
+            <div class="album-three">
+                <h4>Photography</h4>
+            </div>
+
+            <div class="album-four">
+                <h4>Illustration</h4>
+            </div>
+
+            <div class="album-five">
+                <h4>3D Art</h4>
+            </div>
+
+            <div class="album-six">
+                <h4>UI/UX</h4>
+            </div>
+
+            <div class="album-seven">
+                <h4>Motion</h4>
+            </div>
+
+            <div class="album-eight">
+                <h4>Architechture</h4>
+            </div>
+
+            <div class="album-nine">
+                <h4>Product Design</h4>
+            </div>
+
+            <div class="album-10">
+                <h4>Fashion</h4>
+            </div>
+
+            <div class="album-11">
+                <h4>Advertising</h4>
+            </div>
+
+            <div class="album-12">
+                <h4>Fine Arts</h4>
+            </div>
+
+            <div class="album-13">
+                <h4>Crafts</h4>
+            </div>
+
+            <div class="album-14">
+                <h4>Game Design</h4>
+            </div>
+
+            <div class="album-15">
+                <h4>Sound</h4>
+            </div>
+
+            <div class="album-16">
+                <h4>Photoshop</h4>
+            </div>
+
+            <div class="album-17">
+                <h4>Illustrator</h4>
+            </div>
+
+            <div class="album-18">
+                <h4>InDesign</h4>
+            </div>
+
+            <div class="album-19">
+                <h4>Premire Pro</h4>
+            </div>
+
+            <div class="album-20">
+                <h4>After Effects</h4>
+            </div>
+
+            <div class="album-21">
+                <h4>Stock</h4>
+            </div>
+
+            <div class="album-22">
+                <h4>Capture</h4>
+            </div>
+
+            <div class="album-23">
+                <h4>Substance 3D Designer</h4>
+            </div>
+
+            <div class="album-24">
+                <h4>Substance 3D Painter</h4>
+            </div>
+
+            <div class="album-25">
+                <h4>Substance 3D Sampler</h4>
+            </div>
+
+            <div class="album-26">
+                <h4>Substance 3D Stager</h4>
+            </div>
+            <div class="album-27">
+                <h4>Fresco</h4>
+            </div>
+            <div class="album-28">
+                <h4>Generative</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- image-cards -->
+
+    <div class="card-container">
+
+        <!-- row-1 -->
+        <div class="card">
+            <img src="./Multimedia/images/logo collection.png">
+            <div class="content">
+                <h4>Logo Selection 2026 - Selected Brand...</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 239</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 2.7k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/libero.png">
+            <div class="content">
+                <h4>LIBRO CASE STUDYO: A world in Objects</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/Screenshot 2026-03-19 230214.png">
+            <div class="content">
+                <h4>Do more with Behance pro</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/stenomatic.png">
+            <div class="content">
+                <h4>Steneomatic</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/stay home.jpg">
+            <div class="content">
+                <h4>Stay Home</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 239</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 2.7k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- row 2 -->
+
+        <div class="card">
+            <img src="./Multimedia/images/trainual - Copy.png">
+            <div class="content">
+                <h4>Trainual / SaaS Explainer V /...ideo</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Multimedia/images/super.png">
+            <div class="content">
+                <h4>The Superlative Collection / CGI</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/arabic.png">
+            <div class="content">
+                <h4>Arabic Logos Vol.1</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/modern tree.png">
+            <div class="content">
+                <h4>MORDERN TREES HOUSES</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/dynasty.png">
+            <div class="content">
+                <h4>Dynasty Club Clothing Brand Design</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- row 3 -->
+
+        <div class="card">
+            <img src="./Multimedia/images/lampadaire.png">
+            <div class="content">
+                <h4>Revue Lampadaire</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/shin.png">
+            <div class="content">
+                <h4>SHINSEGAE 2020 / Media art...</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/Ncmh.png">
+            <div class="content">
+                <h4>NCMH№№№№℉</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/THIANA.png">
+            <div class="content">
+                <h4>GHIANA AUTEME 25</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/nova 16.png">
+            <div class="content">
+                <h4>Nova 16 / Fashion Branding</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- row 4 -->
+
+        <div class="card">
+            <img src="./Multimedia/images/morning after.png">
+            <div class="content">
+                <h4>"morning after"</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/klint.png">
+            <div class="content">
+                <h4>Klint</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- row 5 -->
+        <div class="card">
+            <img src="./Multimedia/images/biodance sheet.png">
+            <div class="content">
+                <h4>BIODANCE SHEET MASK 4-PACK KIT</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/will.png">
+            <div class="content">
+                <h4>Will Bank</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/modern tree.png">
+            <div class="content">
+                <h4>NCMH本起书本起书本书个本书</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/tea oil.png">
+            <div class="content">
+                <h4>本起书本起书本书个本书TEA OIL REDESIGN</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- row 6 -->
+        <div class="card">
+            <img src="./Multimedia/images/fashion e.png">
+            <div class="content">
+                <h4>Fashion E-commerce web design</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/mural.png">
+            <div class="content">
+                <h4>MURAL tree</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Multimedia/images/A mistery.png">
+            <div class="content">
+                <h4>Mystery book</h4>
+                <div class="stats">
+                    <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                    <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="none">
+                <img src="./Multimedia/images/brightens.png">
+                <div class="content">
+                    <h4></h4>
+                    <div class="stats">
+                        <span class="react"><img src="./Multimedia/images/react.svg" alt=""> 478</span>
+                        <span class="react"><img src="./Multimedia/images/views.svg" alt=""> 7.2k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sign in options -->
+    <div class="signin-options">
+        <h2>Log in or sign up to view more projects</h2>
+
+        <div class="opt">
+            <span><img style="width: 20px;" src="./Multimedia/images/google icon.jpg" alt="">Create with Google</span>
+        </div>
+
+        <div class="opt">
+            <span><img src="./Multimedia/images/facebook icon.png" alt="">Continue with Facebook</span>
+        </div>
+
+        <div class="opt">
+            <span><i style="font-size: 1.2rem;" class="bi bi-apple"></i>Continue with Apple</span>
+        </div>
+
+        <div class="more">
+            <p>Veiw more</p>
+        </div>
+
+        <div class="or">
+            <p>Or</p>
+        </div>
+
+        <div class="mail-holder">
+            <h3>Continue with email</h3>
+            <p>Email adress</p>
+            <input type="" placeholder="">
+            <div class="bttn-con">
+                <button>Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="position">
+    <!-- line -->
+      <div class="Line">
+        <img src="./Multimedia/images/creator-pro-upsell-banner-border.webp" alt="">
+
+        <div class="Upgrade">
+            <h4><span class="bold">Upgrade to Behance Pro today:</span> <span class="light">Get advanced analytics, a
+                    custom
+                    portfolio website, and more features to grow your creative career.
+                </span><span class="blue">Start your 7 day free trial</span></h4>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="foot">
+
+            <div class="column">
+                <h1>Bēhance</h1>
+            </div>
+
+            <div class="col">
+                <h3>Built For Creatives</h3>
+                <p>Try Bhance Pro</p>
+                <p>Find inspiration</p>
+                <p>Get Hired</p>
+                <p>Sell Creative Assets</p>
+                <p>Sell Freelance Creative</p>
+            </div>
+
+            <div class="col">
+                <h3>Find talent</h3>
+                <p>Post a Job</p>
+                <p>Graphic Designer</p>
+                <p>Photographers</p>
+                <p>Video Editors</p>
+                <p>Web Designer</p>
+                <p>Illustrator</p>
+            </div>
+
+            <div class="col">
+                <h3>Behance</h3>
+                <p>About Behance</p>
+                <p>About portfolio</p>
+                <p>Download the App</p>
+                <p>Blog</p>
+                <p>Careers</p>
+                <p><a href="./html/help-centre.html" style="color: white; text-decoration: none;">Help Center</a></p>
+                <p>Contact us</p>
+                <p>Popular Search Terms</p>
+                <p>Login</p>
+            </div>
+
+            <div class="col">
+                <div class="social">
+                    <h3>Social</h3>
+                    <p><i class="bi bi-instagram"></i>Instagram</p>
+                    <p><i class="bi bi-twitter"></i>Twitter</p>
+                    <p><i class="bi bi-pinterest"></i>Pintrest</p>
+                    <p><i class="bi bi-facebook"></i>Facebook</p>
+                    <p><i class="bi bi-linkedin"></i>Linkedin</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="row-1">
+                <img src="./Multimedia/images/adobe whitr.png" alt="">
+                <h4>© 2026 Adobe Inc. All rights reserved.</h4>
+            </div>
+
+            <div class="row">
+                <div class="footer-drop">
+                    <i class="bi bi-globe"></i>
+                    <div class="footer-select-wrap">
+                        <select name="language" id="language">
+                            <option value="en-us">English</option>
+                            <option value="cs">Cestina</option>
+                            <option value="de">Deutsch</option>
+                            <option value="es">Espanol</option>
+                            <option value="fr">Francais</option>
+                            <option value="it">Italiano</option>
+                            <option value="nl">Nederlands</option>
+                            <option value="pl">Polski</option>
+                            <option value="pt-br">Portugues (Brasil)</option>
+                            <option value="sv">Svenska</option>
+                            <option value="tr">Turkce</option>
+                        </select>
+                        <i class="bi bi-caret-down-fill" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="TOU">
+                    <h4>TOU</h4>
+                    <h4>Privacy</h4>
+                    <h4>Community</h4>
+                    <h4>Community</h4>
+                    <h4 class="cook">Cookie preference</h4>
+                    <h4 class="do">Do not sell or share my personal information</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  </div>
 </body>
+
 </html>
