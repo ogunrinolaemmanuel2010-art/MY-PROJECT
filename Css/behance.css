@@ -1655,6 +1655,7 @@ footer {
     .hero h2 {
         margin: auto;
         width: 500px;
+        font-size: 4rem;
     }
 
     .hero p {
@@ -1680,7 +1681,7 @@ footer {
 @media(max-width:650px) {
     .hero h2 {
         margin: auto;
-        width: 300px;
+        width: 500px;
     }
 
     .card-container {
@@ -1691,6 +1692,9 @@ footer {
 
 
 @media(max-width:600px) {
+      header{
+        padding: 10px 8px;
+    }
     .hero h2 {
         margin: auto;
         width: 500px;
@@ -1742,37 +1746,41 @@ footer {
 
     .hero h2 {
         font-size: 3.7rem;
-        line-height: 48px;
+        line-height: 58px;
         margin: auto;
-        width: 450px;
+        width: 100%;
+        max-width: 500px;
     }
 
     .hero p {
         font-size: 1.2rem;
-        width: 450px;
+        width: 100%;
     }
 }
 
 @media(max-width:450px) {
+      header{
+        padding: 10px 8px;
+    }
     .hero {
+        margin-top: 20px;
         align-items: center;
+        width: 100%;
     }
 
     .hero h2 {
+        font-size: 3.2rem;
+        line-height: 50px;
         margin: auto;
-        width: 250px;
+        max-width: 450px;
+        width: 100%;
     }
 
     .hero p {
-        width: 350px;
+
         font-size: 1.1rem;
     }
 
-    .hero-buttons {
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-    }
 
     .card-container {
         display: grid;
@@ -1794,8 +1802,18 @@ footer {
 }
 
 @media(max-width:400px) {
+    .hero h2{
+        width: 100%;
+    font-size: 3rem;
+}
     .hero p {
-        width: 280px;
+        width: 100%;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
     }
 
     .Upgrade {
@@ -1803,21 +1821,80 @@ footer {
     }
 }
 
-@media(max-width:350px) {
+@media(max-width:369px) {
+    .hero {
+        padding-top: 84px;
+        gap: 22px;
+    }
+
     .hero h2 {
-        font-size: 2.5rem;
-        margin: auto;
-        width: 300px;
-        line-height: 40px;
+        width: 100%;
+        max-width: 320px;
+        font-size: 2.55rem;
+        line-height: 1.05;
     }
 
     .hero p {
-        margin-top: -20px;
-        width: 300px;
+        width: 100%;
+        max-width: 320px;
+        margin-top: 0;
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .bttn3,
+    .bttn4 {
+        width: 100%;
+        max-width: 200px;
+    margin: auto;    
+    }
+}
+
+@media(max-width:350px) {
+    header{
+        padding: 10px 8px;
+    }
+    .hero {
+        margin-top: 10px;
+        padding-top: 82px;
+        gap: 20px;
+    }
+
+    .hero h2 {
+        margin-top: 0;
+        font-size: 2.25rem;
+        margin: auto;
+        width: 100%;
+        max-width: 300px;
+        line-height: 1.05;
+    }
+
+    .hero p {
+        margin-top: 0;
+        width: 100%;
+        max-width: 300px;
+        font-size: 0.92rem;
     }
 
     .hero span {
         display: block;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .bttn3,
+    .bttn4 {
+        font-size: 13px;
+        width: 100%;
     }
 
     .Upgrade {
