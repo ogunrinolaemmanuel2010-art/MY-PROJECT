@@ -23,6 +23,8 @@ header {
 }
 
 .Be {
+    text-decoration: none;
+    color: #000;
     display: none;
     font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

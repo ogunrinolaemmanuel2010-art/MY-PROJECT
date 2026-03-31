@@ -32,6 +32,8 @@ header {
 }
 
 .Be {
+    text-decoration: none;
+    color: #000;
     display: none;
     font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -242,8 +244,8 @@ header {
     height: 32px;
     width: 80px;
     border-radius: 15px;
-    border: 1px solid rgb(223, 230, 246);
-    background-color: rgb(245, 248, 255);
+    border: 1px solid rgba(128, 128, 128, 0.408);
+    background-color: white;
 }
 
 .bttn2:hover {
@@ -1181,8 +1183,8 @@ footer {
     .bttn2 {
         height: auto;
         width: auto;
-        border: none;
-        background: none;
+        border: 1px solid rgba(128, 128, 128, 0.445);
+        background-color: white ;
         color: rgb(25, 25, 25);
         padding: 4px;
     }
