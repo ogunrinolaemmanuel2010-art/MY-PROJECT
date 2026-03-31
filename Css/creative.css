@@ -1152,9 +1152,9 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: clamp(20px, 3vw, 50px);
 }
-@media (max-width:1200px) {
-    
-}
+
+@media (max-width:1200px) {}
+
 @media (max-width: 1090px) {
     .behance {
         display: none;
@@ -1193,6 +1193,7 @@ footer {
         display: none;
     }
 }
+
 @media(max-width: 1025px) {
     .sec-1 {
         flex-direction: column;
@@ -1212,6 +1213,7 @@ footer {
         max-width: 100%;
     }
 }
+
 @media (max-width: 1000px) {
     .hero-right {
         display: none;
@@ -1262,6 +1264,7 @@ footer {
         row-gap: 12px;
     }
 }
+
 @media (max-width: 992px) {
     header {
         padding: 10px 10px;
@@ -1539,6 +1542,10 @@ footer {
         justify-content: center;
         text-align: center;
     }
+     .step-number {
+        display: none;
+        line-height: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1673,6 +1680,7 @@ footer {
 }
 
 @media (max-width: 360px) {
+
     .hero-left h1,
     .sec-5 h1,
     .sec-7 h1,
@@ -1681,22 +1689,21 @@ footer {
         font-size: 2rem;
         line-height: 1;
     }
-.texts h1{
-font-size: 0.9rem;
-font-weight: 200;
-}
 
-.sec-3 h2{
-    font-weight: 600;
-    line-height: 2;
-}
-.step-number{
-    display: none;
-    line-height: 0;
-}
-.sec-4 h2{
-font-size: 1rem;
-}
+    .texts h1 {
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
+
+    .sec-3 h2 {
+        font-weight: 600;
+        line-height: 2;
+    }
+
+    .sec-4 h2 {
+        font-size: 1rem;
+    }
+
     .hero-left p,
     .sec-3 p,
     .sec-5 p,
