@@ -220,6 +220,21 @@ header {
     cursor: pointer;
 }
 
+.btn {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 18px;
+    color: white;
+    background-color: rgb(0, 87, 255);
+    height: 32px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: none;
+}
+
 .search {
     display: none;
 }
@@ -416,8 +431,6 @@ header {
     max-width: 600px;
 }
 
-.grow {}
-
 .hero-right h1 {
     font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
@@ -446,7 +459,6 @@ header {
     margin-bottom: 10px;
     font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
-    /* font-weight: ; */
     line-height: normal;
     color: rgb(25, 25, 25);
 }
@@ -454,16 +466,29 @@ header {
 .hero-content p {
     font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(112, 112, 112);
+    width: 100%;
 }
 
 .Past {
     font-family: adobe-clean, "Adobe Clean", メイリオ, Meiryo, "”ヒラギノ角ゴ Pro W3″", "”Hiragino Kaku Gothic Pro W3″", osaka, "”ＭＳ Ｐゴシック”", "MS PGothic", sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
-    line-height: 36px;
+    line-height: 40px;
     color: rgb(25, 25, 25);
-    padding: 0 150px;
+    padding: 10px;
     margin-bottom: 30px;
+    margin: auto;
+    width: 99%;
+}
+
+.Past p {
+    color: #666;
+}
+
+.cards-con {
+    margin: auto;
+    width: 95%;
+    margin-top: 20px;
 }
 
 .card-con {
@@ -471,6 +496,11 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     padding: 0 150px;
+}
+
+
+.card-con .job-card:nth-child(4) {
+    display: none;
 }
 
 .job-card {
@@ -587,8 +617,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    width: 80%;
     margin-top: 90px;
 }
 
@@ -607,7 +635,930 @@ header {
     line-height: normal;
     color: rgb(112, 112, 112);
 }
-.card-image1{
-   background: url(../Multimedia/images/Artboard\ #7.jpg);
-    height: 500px;
+
+.article-section {
+    margin: auto;
+    width: 80%;
+}
+
+.article-section .article-card:nth-child(4) {
+    display: none;
+}
+
+.article a {
+    margin-top: 40px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(75, 89, 105);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.article-cards {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.image-1 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.25s ease;
+    background-image: url("../Multimedia/images/mood.webp");
+}
+
+.image-2 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.25s ease;
+    background-image: url("../Multimedia/images/house.webp");
+}
+
+.image-3 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.25s ease;
+    background-image: url("../Multimedia/images/agency.webp");
+}
+
+.image-4 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.25s ease;
+    background-image: url("../Multimedia/images/beginner.webp");
+}
+
+.article-card h3 {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    color: rgb(25, 25, 25);
+}
+
+.article-card p {
+    /* margin-top: 8px; */
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: rgb(25, 25, 25);
+}
+
+.image-1:hover,
+.image-2:hover,
+.image-3:hover {
+    background-color: rgba(128, 128, 128, 0.35);
+    background-blend-mode: multiply;
+}
+
+.latest-section {
+    margin: auto;
+    width: 80%;
+}
+
+.latest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.latest-section .latest-card-3:nth-child(4) {
+    display: none;
+}
+
+.latest h1 {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 46.8px;
+    color: rgb(25, 25, 25);
+}
+
+.latest p {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(112, 112, 112);
+}
+
+.latest a {
+    margin-top: 40px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(75, 89, 105);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.latest a:hover {
+    text-decoration: underline;
+}
+
+.latest-cards {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.photo-1 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.25s ease;
+    background-image: url(../Multimedia/images/produc...\ projects.png);
+}
+
+.photo-2 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.25s ease;
+    background-image: url(../Multimedia/images/Behance\ basic.png);
+}
+
+.photo-3 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.25s ease;
+    background-image: url(../Multimedia/images/price\ you..\ work.png);
+}
+
+.photo-4 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.25s ease;
+    background-image: url(../Multimedia/images/make..\ it.png);
+}
+
+.latest-card-1 h3,
+.latest-card-2 h3,
+.latest-card-3 h3 {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: rgb(25, 25, 25);
+}
+
+.latest-card-1 p,
+.latest-card-2 p,
+.latest-card-3 p {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    color: rgb(25, 25, 25);
+}
+
+.photo-1:hover,
+.photo-2:hover,
+.photo-3:hover {
+    background-color: rgba(111, 109, 109, 0.604);
+    background-blend-mode: multiply;
+}
+
+.creative {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 93%;
+    padding: 100px;
+}
+
+.creative-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.creative-text h1 {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgb(25, 25, 25);
+}
+
+.creative-text p {
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(112, 112, 112);
+}
+
+.creative button {
+    border-radius: 20px;
+    padding: 7px;
+    width: 100px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    border: 1px solid gray;
+    background-color: white;
+    font-weight: 600;
+    line-height: 14px;
+    color: rgb(25, 25, 25);
+}
+
+.creative-text button:hover {
+    background-color: rgba(128, 128, 128, 0.495);
+}
+
+.creative-image img {
+    width: 500px;
+}
+
+.Line {
+    width: 100%;
+    line-height: 2;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Line img {
+    width: 100%;
+}
+
+.Upgrade {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Line .bold {
+    font-weight: 600;
+}
+
+.Line .light {
+    font-weight: 200;
+}
+
+.Line .blue {
+    color: rgb(0, 87, 255);
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: rgb(25, 25, 25);
+    padding: 60px;
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.column {
+    font-size: 1.2rem;
+}
+
+.col h3 {
+    margin-bottom: 30px;
+}
+
+.col {
+    line-height: 2.5;
+}
+
+.col p:hover {
+    text-decoration: underline;
+}
+
+.social p {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-down {
+    border-top: 1px solid rgb(132, 131, 131);
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.row-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-down h4 {
+    font-size: 0.8rem;
+    font-weight: 100;
+    display: block;
+}
+
+.footer-down img {
+    width: 100px;
+    display: block;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.footer-drop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-drop>i {
+    font-size: 14px;
+    color: rgb(189, 189, 189);
+}
+
+.TOU {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-select-wrap {
+    position: relative;
+}
+
+.footer-select-wrap select {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: rgb(189, 189, 189);
+    padding-right: 18px;
+    cursor: pointer;
+}
+
+.footer-select-wrap select:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.footer-select-wrap select:focus {
+    outline: none;
+}
+
+.footer-select-wrap option {
+    color: rgb(25, 25, 25);
+}
+
+.footer-select-wrap option:hover {
+    background-color: rgb(230, 240, 255);
+    color: rgb(0, 87, 255);
+}
+
+.footer-select-wrap i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 75px;
+    transform: translateY(-50%);
+    font-size: 8px;
+    color: rgb(189, 189, 189);
+    pointer-events: none;
+}
+
+.footer-down h4:hover {
+    text-decoration: underline;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bttn-wrap {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.bttn-wrap a {
+    text-decoration: none;
+}
+
+.hero {
+    width: min(1200px, 92%);
+    gap: 32px;
+}
+
+.hero-left img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.Past {
+    margin: auto;
+    width: min(1200px, 92%);
+    padding: 0;
+}
+
+.card-con {
+    margin: auto;
+    width: min(1200px, 92%);
+    padding: 0;
+}
+
+.article-section,
+.latest-section {
+    width: min(1200px, 92%);
+}
+
+.creative {
+    width: min(1250px, 94%);
+    padding: 100px 4%;
+    gap: 30px;
+}
+
+.creative-image img {
+    width: min(500px, 100%);
+    height: auto;
+}
+
+.Upgrade {
+    padding: 0 16px 12px;
+}
+
+footer {
+    padding: clamp(28px, 5vw, 60px);
+}
+
+.foot {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: clamp(20px, 3vw, 50px);
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .hero-left {
+        display: none;
+    }
+
+    .hero-right {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .grow {
+        text-align: center;
+        width: 100%;
+    }
+
+    .grow h1 {
+        font-size: 3.2rem;
+        line-height: 1;
+    }
+
+    .card-con {
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        width: 90%;
+    }
+
+    .Past {
+        margin: auto;
+        width: 90%;
+    }
+
+    .article-section {
+        margin: auto;
+        width: 85%
+    }
+
+    .job-card {
+        width: 100%;
+        /* max-width: 800px; */
+    }
+
+    .article-cards,
+    .latest-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .latest-section {
+        margin: auto;
+        width: 85%
+    }
+
+    .creative-image {
+        display: none;
+    }
+
+    .creative-text {
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .Upgrade {
+        text-align: center;
+    }
+}
+
+@media(max-width: 1090px) {
+    .behance {
+        display: none;
+    }
+
+    .container .be {
+        display: block;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .bttn2 {
+        display: none;
+    }
+
+    .vbg img {
+        display: none;
+    }
+
+    .search {
+        display: block;
+    }
+
+    .Be {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .column {
+        display: none;
+    }
+}
+
+@media(max-width :1079px) {
+    .bttn1 {
+        display: none;
+    }
+}
+
+@media(max-width :1030px) {
+
+    .card-con,
+    .article-cards,
+    .latest-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-con,
+    .article-section,
+    .latest-section {
+        margin: auto;
+        width: 83%;
+    }
+
+    .Past {
+        margin: auto;
+        width: 83%;
+    }
+
+    .card-con .job-card:nth-child(4) {
+        display: block;
+        display: flex;
+    }
+
+    .article-section .article-card:nth-child(4) {
+        display: block;
+    }
+
+    .latest-section .latest-card-3:nth-child(4) {
+        display: block;
+    }
+}
+
+@media(max-width:900px) {
+    .Past {
+        margin: auto;
+        width: 100%;
+    }
+
+    .card-con {
+        margin: auto;
+        width: 100%;
+    }
+
+    .article-section,
+    .latest-section {
+        margin: auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 10px 10px;
+    }
+
+    .container {
+        gap: 18px;
+    }
+
+    .nav-menu {
+        gap: 16px;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-right h1 {
+        margin-bottom: 16px;
+    }
+
+    .hero-content h3 {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .Past {
+        margin-top: 30px;
+    }
+
+    .creative {
+        flex-direction: column;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        position: sticky;
+        top: 0;
+    }
+
+    .Be {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .behance {
+        font-size: 1.15rem;
+    }
+
+    .nav-links,
+    .bttn1,
+    .adobe {
+        display: none;
+    }
+
+    .search {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .start {
+        gap: 10px;
+    }
+
+    .content {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 10px 12px;
+        scrollbar-width: none;
+    }
+
+    .content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bttn-wrap {
+        min-width: max-content;
+    }
+
+    .content button {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+    .hero {
+        padding: 50px;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .grow h1 {
+        font-size: 2.5rem;
+    }
+
+    .Past {
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    .Past h1 {
+        font-size: 1.8rem;
+    }
+
+    .Past p {
+        font-size: 1.2rem;
+    }
+
+    .article,
+    .latest {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 55px;
+    }
+
+    .creative-text h1 {
+        font-size: 2rem;
+    }
+
+    .Line {
+        line-height: 1.6;
+    }
+
+    .Upgrade {
+        text-align: center;
+    }
+
+    .footer-down {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h3 {
+        text-decoration: underline;
+        font-size: 1.7rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-content i {
+        display: none;
+    }
+
+    .card-con,
+    .article-cards,
+    .latest-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 12px;
+    }
+
+    .bttn2 {
+        width: 72px;
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        padding-top: 34px;
+    }
+
+    .hero-right h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content img {
+        width: 42px;
+    }
+
+    .job-card {
+        padding: 14px;
+    }
+
+    .article h1,
+    .latest h1 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+    .article a,
+    .latest a {
+        margin-top: 6px;
+        font-size: 0.92rem;
+    }
+
+    .creative {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .creative-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .row-1 {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .TOU {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .hero p {
+        font-size: 0.9rem;
+    }
 }

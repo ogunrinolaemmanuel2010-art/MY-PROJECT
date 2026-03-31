@@ -51,6 +51,8 @@ header {
 /*  */
 
 .Be {
+    text-decoration: none;
+    color: #000;
     display: none;
     font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -157,9 +159,11 @@ header {
 .nav-links .drop-down:hover .drop1 {
     display: block;
 }
-.drop1 a{
+
+.drop1 a {
     font-size: 12px;
 }
+
 .drop1 h3:hover {
     color: rgb(23, 79, 192);
 }
@@ -196,6 +200,7 @@ header {
 .nav-links .drop-down:hover .drop2 {
     display: block;
 }
+
 /* .drop1::before,
 .drop2::before {
     content: "";
@@ -238,7 +243,7 @@ header {
 }
 
 
-.bttn1{
+.bttn1 {
     font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.8rem;
     font-weight: 600;
@@ -252,7 +257,7 @@ header {
     cursor: pointer;
 }
 
-.bttn1 a{
+.bttn1 a {
     text-decoration: none;
     color: white;
 }
@@ -290,26 +295,6 @@ header {
     position: relative;
 }
 
-/* .adobe::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 420px;
-    height: 14px;
-} */
-
-/* .menu-box::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 90px;
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-bottom: solid white;
-    z-index: -1;
-} */
-
 .menu-box {
     display: none;
     width: 420px;
@@ -338,9 +323,11 @@ header {
     background: rgb(222, 232, 255);
     cursor: pointer;
 }
-.menu-box .menu-item{
+
+.menu-box .menu-item {
     margin-top: 9px;
 }
+
 .left {
     display: flex;
     gap: 20px;
@@ -387,14 +374,13 @@ header {
 
 .hero {
     background: linear-gradient(to bottom, rgb(245, 248, 255), rgb(255, 255, 255));
-    /* background-image: url(../Multimedia/Creative\ array\ of\ diverse\ visuals.png); */
     margin-top: 10px;
     text-align: center;
     z-index: 10;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 10px ;
+    padding: 10px;
     padding-top: 90px;
 }
 
@@ -1347,10 +1333,12 @@ header {
 .bottom-head img {
     width: 50px;
 }
-.position{
+
+.position {
     /* position: static; */
     /* top: 30px; */
 }
+
 .Line {
     width: 100%;
     padding-top: 150px;
@@ -1384,7 +1372,7 @@ footer {
     color: white;
     background-color: rgb(25, 25, 25);
     padding: 60px;
-
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .foot {
@@ -1434,8 +1422,7 @@ footer {
 .footer-down h4 {
     font-size: 0.8rem;
     font-weight: 100;
-    display: flex;
-    gap: 10px;
+    display: block;
 }
 
 .footer-down img {
@@ -1445,6 +1432,7 @@ footer {
 
 .row {
     display: flex;
+    align-items: center;
     text-align: left;
     gap: 20px;
 }
@@ -1455,7 +1443,7 @@ footer {
     gap: 8px;
 }
 
-.footer-drop > i {
+.footer-drop>i {
     font-size: 14px;
     color: rgb(189, 189, 189);
 }
@@ -1463,6 +1451,7 @@ footer {
 .TOU {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-select-wrap {
@@ -1514,11 +1503,21 @@ footer {
     text-decoration: underline;
 }
 
+footer {
+    padding: clamp(28px, 5vw, 60px);
+}
+
+.foot {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: clamp(20px, 3vw, 50px);
+}
+
 @media(max-width:1400px) {
-    .hero{
+    .hero {
         padding: 10px;
         padding-top: 100px;
     }
+
     .stick {
         position: sticky;
         z-index: 999;
@@ -1566,18 +1565,6 @@ footer {
         display: none;
     }
 
-    .foot {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 50px;
-    }
-
-}
-
-@media(max-width:1200px) {
-    .footer-down {
-        flex-direction: column;
-    }
 }
 
 @media(max-width:1150px) {
@@ -1593,10 +1580,6 @@ footer {
     }
 
     .nav-links {
-        display: none;
-    }
-
-    .bttn2 {
         display: none;
     }
 
@@ -1653,29 +1636,11 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .footer-down img {
-        width: 50px;
-    }
-
-    .foot {
-        gap: 30px;
-    }
-
-    footer {
-        padding: 20px;
-    }
-
 }
 
 @media(max-width:962px) {
     .column {
         display: none;
-    }
-
-    .foot {
-        padding: 50px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -1684,26 +1649,6 @@ footer {
         margin: auto;
         width: 600px;
     }
-
-    .foot {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 35px;
-    }
-
-}
-
-@media(max-width:795px) {
-    .foot {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .TOU h4 {
-        font-size: 0.7rem;
-    }
-
 }
 
 @media(max-width:768px) {
@@ -1715,6 +1660,18 @@ footer {
     .hero p {
         font-size: 1rem;
         width: 400px;
+    }
+
+    .footer-down {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 
 }
@@ -1773,22 +1730,6 @@ footer {
         display: none;
     }
 
-    .column {
-        display: block;
-    }
-
-    .foot {
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .social {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .TOU .do {
         display: none;
     }
@@ -1842,16 +1783,14 @@ footer {
         text-align: center;
     }
 
-    .row {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    .row-1 {
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
-    .footer-drop {
-        margin-left: 150px;
+    .TOU {
+        gap: 10px;
     }
-
-
 }
 
 @media(max-width:400px) {
@@ -1877,21 +1816,15 @@ footer {
         width: 300px;
     }
 
+    .hero span {
+        display: block;
+    }
+
     .Upgrade {
         text-align: center;
-    }
-
-    footer {
-        width: 100%;
-    }
-
-    .footer-down {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
     }
 
     .TOU .cook {
         display: none;
     }
-
 }

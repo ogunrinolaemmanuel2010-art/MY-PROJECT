@@ -5,35 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/signin-page.css">
-    <title>Document</title>
+     <link rel="icon" type="image/svg+xml" href="../Multimedia/images/ADOBE RED IMG.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Sign in</title>
 </head>
 
 <body>
-    <div>
-        <div class="container">
-            <div class="content1">
-                <span><img src="../Multimedia/images/BE download.svg" alt="">Behance</span>
+    <div class="container">
+        <div class="content1">
+            <span><img src="../Multimedia/images/be sign in.png" alt="">Behance</span>
+        </div>
+
+        <div class="content2">
+            <div class="hidden">
+                <span><img src="../Multimedia/images/be sign in.png" alt="">Behance</span>
             </div>
 
-            <div class="content2">
-                <h4>Sign in</h4>
-                <p>New user? <a href="">Create an account</a></p>
+            <h4>Sign in</h4>
+            <p class="intro">New user? <a href="">Create an account</a></p>
 
-                <label for="">Email adress</label>
-                <input type="text" placeholder="">
-               <div class="bttn">
-                 <button>Continue</button>
-               </div>
+            <label for="email">Email adress</label>
+            <input id="email" type="text">
+            <div class="bttn">
+                <button>Continue</button>
+            </div>
+
+            <div class="line">Or</div>
+
+            <a class="social-link" href="">
                 <span><img style="width: 25px;" src="../Multimedia/images/google icon.jpg" alt="">Create with
                     Google</span>
+            </a>
+            <a class="social-link" href="">
                 <span><img style="width: 40px;" src="../Multimedia/images/facebook icon.png" alt="">Continue with
                     Facebook</span>
-                <span><i style="font-size: 1.2rem;" class="bi bi-apple"></i>Continue with Apple</span>
-                <a href="">more sign-in options</a>
-                <a href="">Get help signing in</a>
+            </a>
+            <a class="social-link" href="">
+                <span style="padding: 15px;"><i style="font-size: 1.2rem;" class="bi bi-apple"></i>Continue with
+                    Apple</span>
+            </a>
+
+            <div class="links">
+                <a class="links1" href="">More sign-in options</a>
+                <a class="links2" href="">Get help signing in</a>
             </div>
         </div>
-  
+
+        <div class="icon">
+            <div><i class="bi bi-chat-left-dots "></i>
+            </div>
+            <h5>contact us</h5>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-left">
+            <div class="footer-locale">
+                <i class="bi bi-globe2" aria-hidden="true"></i>
+                <div class="footer-select-wrap">
+                    <select name="language" id="language">
+                        <option value="en-us">English</option>
+                        <option value="cs">Cestina</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Espanol</option>
+                        <option value="fr">Francais</option>
+                        <option value="it">Italiano</option>
+                        <option value="nl">Nederlands</option>
+                        <option value="pl">Polski</option>
+                        <option value="pt-br">Portugues (Brasil)</option>
+                        <option value="sv">Svenska</option>
+                        <option value="tr">Turkce</option>
+                    </select>
+                    <i class="bi bi-caret-down-fill" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <h5>TOU</h5>
+            <h5>Privacy</h5>
+            <h5>Community</h5>
+        </div>
+
+        <div class="footer-right">
+            <img src="../Multimedia/images/adobe.svg" alt="">
+        </div>
+    </footer>
+
 </body>
 
 </html>

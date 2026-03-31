@@ -1,88 +1,359 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 .container {
     background-image: url(../Multimedia/images/sign-in\ page\ bg.jpg);
     display: flex;
     width: 100%;
-    height: 720px;
-    border: 1px solid;
-    justify-content:space-between;
- background-size: cover;
- background-repeat: no-repeat;
-}
-.content1{
-    width: 50%;
-    border: 5px solid;
-}
-.content1 img {
-    width: 40px;
+    /* min-height: 100vh; */
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
+    overflow-x: hidden;
 }
 
-.content1 span{
-    padding: 300px;
+.hidden span {
     display: flex;
     gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 54px;
+    opacity: 1;
+}
+
+.hidden img {
+    width: 30px;
+}
+
+.content1 span {
+    padding: clamp(40px, 10vw, 120px);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
     font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 54px;
     color: rgb(255, 255, 255);
 }
-.content2{
+
+.content2 {
     background-color: white;
-    width: 50%;
-    max-width: 500px;
-    margin: 10px;
-  margin-right: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    /* border: 5px solid pink; */
+    width: min(100%, 460px);
+    margin: 10px 0;
+    padding: 50px;
+    gap: 14px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
     display: flex;
     flex-direction: column;
-}
-.content2 h4{
-    font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
-font-size: 36px;
-font-weight: 700;
-line-height: 54px;
-color: rgb(34, 34, 34);
-}
-.content2 p{
-    font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
-font-size: 16px;
-font-weight: 400;
-color: rgb(80, 80, 80);
+    border-radius: 5px;
 }
 
-.content2 a{
+.content2 h4 {
     font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
-font-size: 16px;
-font-weight: 400;
-color: rgb(0, 68, 145);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    color: rgb(34, 34, 34);
 }
-.content2 label{
+
+.content2 p {
     font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
-font-size: 12px;
-font-weight: 400;
-color: rgb(70, 70, 70);
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
 }
-.content2 input{
+
+.intro {
+    margin-bottom: 8px;
+}
+
+.content2 a {
+    font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 68, 145);
+}
+
+.content2 label {
+    font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+    margin-top: 8px;
+}
+
+.content2 input {
     padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(204, 210, 218);
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
 }
-.bttn{
+
+.content2 input:focus {
+    border-color: rgb(2, 101, 220);
+}
+
+.bttn {
     text-align: right;
+    margin-top: 15px;
 }
-.content2 button{
+
+.content2 button {
     font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
-font-size: 14px;
-font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     background-color: rgb(2, 101, 220);
     color: white;
-    padding: 10px;
+    padding: 8px;
     border-radius: 30px;
     width: 100px;
-    /* text-align: right; */
+    border: none;
+    cursor: pointer;
+}
+
+.content2 button:hover {
+    background-color: rgb(1, 82, 178);
+}
+
+.line {
+    color: rgb(72, 72, 72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    border: 1px solid rgb(221, 221, 221);
+    flex: 1;
+}
+
+
+.line span {
+    background: white;
+    padding: 0 12px;
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.social-link span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid rgb(210, 214, 220);
+    border-radius: 30px;
+    padding: 10px;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    background-color: white;
+}
+
+.social-link span:hover {
+    border: 1px solid gray;
+}
+
+.social-link img {
+    object-fit: contain;
+}
+
+.links {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.links2 {
+    text-align: left;
+}
+
+.links a {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.icon {
+    display: flex;
+    margin-top: 500px;
+}
+
+.icon i {
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon h5 {
+    color: #fff;
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+    right: 20px;
+    bottom: 20%;
+    background-color: gray;
+}
+
+.icon:hover.icon h5 {
+    display: block;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 10px;
+    border-top: 1px solid rgb(234, 234, 234);
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-left {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-locale {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-locale i {
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+}
+
+.footer-select-wrap {
+    position: relative;
+}
+
+.footer-select-wrap select {
+    appearance: none;
+    border: none;
+    font-family: acumin-pro, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16.5px;
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+}
+
+
+.footer-select-wrap select:focus {
+    outline: none;
+}
+
+.footer-select-wrap i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50px;
+    transform: translateY(-50%);
+    font-size: 8px;
+    color: rgb(112, 112, 112);
+    pointer-events: none;
+}
+
+.footer-left h5 {
+    font-family: acumin-pro, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16.5px;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+}
+
+.tou {
+    border-left: 1px solid rgb(209, 209, 209);
+    padding-left: 18px;
+}
+
+
+.footer-right img {
+    width: 60px;
+    display: block;
+}
+
+@media (max-width: 1300px) {
+     .content1{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+    }
+    .hidden span{
+        line-height: 0;
+        opacity: 1;
+    }
+    .icon {
+    display: none;
+    }
+}
+
+@media (max-width: 510px) {
+    .container {
+       padding: 0;
+       max-width: fit-content;
+       margin: auto;
+    }
+    .content2{
+        border-radius: 0%;
+        padding: 20px;
+        margin: auto;
+        width: 500px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        text-align: center;
+        padding: 12px 10px;
+    }
+
+    .footer-left {
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .footer-locale {
+        width: 100%;
+        justify-content: center;
+    }
 }

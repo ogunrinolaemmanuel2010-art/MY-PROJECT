@@ -141,14 +141,11 @@ header {
 }
 
 form {
-    /* border: 3px solid black; */
     display: flex;
     justify-content: center;
-    /* padding: 20px; */
 }
 
 .form-con {
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     gap: 30px;
