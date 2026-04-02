@@ -201,17 +201,6 @@ header {
     display: block;
 }
 
-/* .drop1::before,
-.drop2::before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    left: 0;
-    width: 100%;
-    height: 12px;
-} */
-
-
 .menu1 {
     border-bottom: 1px solid gray;
     padding: 20px;
